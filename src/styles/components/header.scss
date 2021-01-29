@@ -1,0 +1,65 @@
+// Header
+@import '../utils/placeholder.scss';
+
+.header {
+   align-items: center;
+   display: flex;
+   height: 100px;
+   justify-content: space-between;
+   margin: 0 auto;
+   @extend %container;
+}
+.header__language,
+.header__login {
+   font-family: var(--primary-font);
+   font-size: var(--size-small-font);
+}
+.header__login {
+   align-items: center;
+   display: flex;
+   span {
+      margin: 0 10px 0 0;
+   }
+}
+.header__nav {
+   width: 60%;
+   ul {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      li {
+         font-family: var(--primary-font);
+         font-size: var(--size-small-font);
+         letter-spacing: 1px;
+         a {
+            color: #000;
+            text-decoration: none;
+         }
+      }
+      li:nth-of-type(3) {
+         display: flex;
+         justify-content: center;
+         width: 200px;
+      }
+   }
+}
+.header__language {
+   align-items: center;
+   display: flex;
+   width: 70px;
+   button {
+      background-color: transparent;
+      border: none;
+      cursor: pointer;
+      padding: 0;
+   }
+   button:nth-of-type(1) {
+      margin: 0 12px 0 8px;
+   }
+}
+
+.fixed {
+   position: sticky;
+   top: 0;
+}
