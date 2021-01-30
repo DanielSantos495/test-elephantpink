@@ -1,63 +1,22 @@
 <template>
-   <div>
+   <main>
       <Header />
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   <div>Hola</div>
-   </div>
+      <Hero />
+      <OurCollection />
+   </main>
 </template>
 
 <script>
    import Header from './components/Header.vue'
+   import Hero from './components/Hero.vue'
+   import OurCollection from './components/OurCollection.vue'
 
    export default {
       name: 'App',
       components: {
-         Header
+         Header,
+         Hero,
+         OurCollection
       }
    }
 </script>

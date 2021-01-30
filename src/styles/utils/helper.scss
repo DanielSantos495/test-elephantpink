@@ -1,0 +1,35 @@
+//Heaer
+.fixed {
+   animation: header .5s ease-out forwards;
+   position: sticky;
+   top: 0;
+   z-index: 1000;
+}
+.weight-header {
+   font-family: var(--primar-font-bold);
+}
+
+// Carousel---Carousel
+
+// Diamond
+.diamong-svg {
+   fill: #fff;
+}
+// Move
+.left {
+   margin-left: 0px;
+}
+.right {
+   margin-left: -1024px;
+}
+
+// Keyframes---Keyframes
+
+@keyframes header {
+   0% {
+      transform: translateY(-100px);
+   }
+   100% {
+      transform: translateY(0);
+   }
+}

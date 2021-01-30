@@ -1,0 +1,10 @@
+@import './placeholder.scss';
+
+@mixin button($height, $width, $background) {
+   height: $height;
+   background-color: $background;
+   @extend %buttonReset;
+   &:active {
+      transform: scale(.95);
+   }
+}

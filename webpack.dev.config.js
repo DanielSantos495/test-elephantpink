@@ -34,13 +34,8 @@ module.exports = {
             ]
          },
          {
-            test: /\.jpe?g|png|.svg|.ttf|.otf|.ttc$/,
-            use: {
-               loader: 'file-loader',
-               options: {
-                  outputPath: 'assets/'
-               }
-            }
+            test: /\.(jpe?g|png|svg|ttf|otf|ttc)$/,
+            use: 'file-loader'
          }
       ]
    },

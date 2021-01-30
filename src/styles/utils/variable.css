@@ -7,8 +7,11 @@
 
    /* Fonts */
    --primary-font: 'Poppins-Regular';
+   --primar-font-bold: 'Poppins-SemiBold';
+   --title-font: 'Didot';
 
    /* Fonts-Size */
+   --size-smaller-font: 10px;
    --size-small-font: 14px;
    --size-mid-font: 16px;
    --size-big-font: 30px;

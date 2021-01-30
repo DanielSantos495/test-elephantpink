@@ -1,0 +1,90 @@
+@import '../utils/placeholder.scss';
+@import '../utils/mixin.scss';
+
+.hero {
+   overflow-x: hidden;
+   position: relative;
+   ul {
+      display: flex;
+      transition: margin .6s ease-out;
+      li {
+         height: 100%;
+         position: relative;
+         img {
+            display: block;
+            height: 100%;
+            line-height: 0;
+            width: 1024px;
+         }
+      }
+   }
+}
+
+.hero__content {
+   align-items: center;
+   background-color: rgba(0, 0, 0, .7);
+   bottom: 0;
+   color: var(--primary-color);
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   left: 0;
+   position: absolute;
+   right: 0;
+   top: 0;
+   h2 {
+      font-family: var(--title-font);
+      font-size: var(--size-big-font);
+   }
+   p {
+      font-family: var(--primary-font);
+      font-size: var(--size-smaller-font);
+      text-align: center;
+      line-height: 16px;
+      letter-spacing: 1px;
+      width: 270px;
+   }
+}
+.hero__content-decoration {
+   background-color: var(--primary-color);
+   height: 1px;
+   margin: 25px 0 25px 0;
+   width: 200px;
+}
+.hero__manage {
+   position: absolute;
+   bottom: 0;
+   left: 0;
+   right: 0;
+   top: 0;
+   @extend %container;
+   div:nth-of-type(1) {
+      align-items: center;
+      display: flex;
+      height: 100%;
+      justify-content: space-between;
+      width: 100%;
+      button {
+         margin: 0 10px 0 0;
+         @include button(0, 0, transparent);
+      }
+      button:nth-of-type(1) {
+         @include button(0, 0, transparent);
+         img {
+            transform: rotate(180deg);
+         }
+      }
+   }
+   div:nth-of-type(2) {
+      display: flex;
+      justify-content: center;
+      position: relative;
+      top: -60px;
+      width: 100%;
+      button {
+         margin: 0 10px 0 0;
+         @extend %buttonReset;
+      }
+   }
+}
+
